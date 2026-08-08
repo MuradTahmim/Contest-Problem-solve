@@ -1,0 +1,63 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define ld long double
+const double PI = acos(-1.0);
+#define vi vector<int>
+#define vll vector<ll>
+#define mii map<int, int>
+#define mll map<ll, ll>
+#define pii pair<int, int>
+#define pll pair<ll, ll>
+#define sorta(x) sort(x.begin(), x.end());
+#define sorti(x) sort(x.begin(), x.end(), greater<int>());
+#define sortd(x) sort(x.begin(), x.end(), greater<decltype(*x.begin())>())
+#define rev(x) reverse(x.begin(), x.end())
+#define loop(i, s, n) for (int i = s; i < n; i++)
+#define yes cout << "YES\n"
+#define no cout << "NO\n"
+#define spc " "
+#define even(x) (x % 2 == 0)
+#define odd(x) (x % 2 == 1)
+#define pb push_back
+#define pob pop_back
+#define endl '\n'
+#define MOD 1000000007
+
+void solve()
+{
+    int n;
+    cin >> n;
+    vector<int> s, m, l;
+    for (int i = 1; i <= n; i++)
+    {
+        s.push_back(i);
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        m.push_back(n + 2 * i);
+        l.push_back(n + 2 * i - 1);
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << s[i] << " " << m[i] << " " << l[i] << " ";
+    }
+    cout << endl;
+}
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+
+    return 0;
+}
