@@ -22,8 +22,6 @@ const double PI = acos(-1.0);
 #define pb push_back
 #define pob pop_back
 #define endl '\n'
-#define f first
-// #define s second
 #define MOD 1000000007
 int main()
 {
